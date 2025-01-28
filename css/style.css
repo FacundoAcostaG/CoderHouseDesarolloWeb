@@ -1,0 +1,94 @@
+/* Import de la fuente utilizada para la letra de la web */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Reseteo de valores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Se aplica la fuente, el color de fondo y se alinea todo el contenido de forma centralizada en todo el body */
+body {
+    font-family: "Nunito", serif;
+    background-color: var(--crema);
+    text-align: center;
+}
+
+h1 {
+    background-color: var(--rosarojo);
+    color: var(--crema);
+}
+
+:root {
+    --crema: #fefaec;
+    --rosarojo: #F38181;
+    --violetagris: #625772;
+}
+
+/* Comienzo de modificacion de estilos en el header. Tamaño de logo, alineamiento de items, se saca el subrayado de los links, se coloca un color diferente cuando se pasa el mouse por encima y se centra todo el contenido*/
+nav img {
+    width: 20%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--rosarojo)
+}
+
+header {
+    text-align: center;
+}
+
+/* Ajustes de tamaño a imagenes e iconos dentro de las paginas web */
+.adopcion {
+    border-radius: 15%;
+    width: 25%;
+}
+
+.instalaciones {
+    border-radius: 3%;
+    width: 35%;
+}
+
+#servicios img {
+    width: 10%;
+}
+
+.profimg {
+    width: 15%;
+    border-radius: 50%;
+}
+
+/* Comienzos de modificacion de estilos en el footer. Color de fondo, tamaño de los logos y de la img de la ubicacion. Se distribuye en contenido en seciones de izquierda, derecha y centro */
+footer {
+    background-color: var(--violetagris);
+}
+
+footer img {
+    width: 2%;
+}
+
+#footer-inicio {
+    text-align: left;
+}
+
+#redes-sociales {
+    text-align: center;
+}
+
+#footer-final {
+    text-align: right;
+}
+
+#footer-final img {
+    width: 20%;
+}
