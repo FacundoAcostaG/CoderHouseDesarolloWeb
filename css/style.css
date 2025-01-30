@@ -27,9 +27,18 @@ h1 {
 }
 
 /* Comienzo de modificacion de estilos en el header. Tamaño de logo, alineamiento de items, se saca el subrayado de los links, se coloca un color diferente cuando se pasa el mouse por encima y se centra todo el contenido*/
-nav img {
-    width: 20%;
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
 }
+
+.Logo img {
+    width: 100%;
+}
+
+
 
 nav ul li {
     display: inline-block;
@@ -40,12 +49,8 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    color: var(--rosarojo)
-}
-
-header {
-    text-align: center;
+.navbar .nav-link:hover {
+    color: var(--rosarojo);
 }
 
 /* Ajustes de tamaño a imagenes e iconos dentro de las paginas web */
@@ -68,27 +73,127 @@ header {
     border-radius: 50%;
 }
 
+.carousel-inner img {
+    width: 100%;
+    height: 400px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.3); /* Fondo negro semi-transparente */
+    padding: 5px; /* Agrega espacio interno para que el texto no esté pegado */
+    border-radius: 25px; /* Esquinas redondeadas (opcional) */
+}
+
 /* Comienzos de modificacion de estilos en el footer. Color de fondo, tamaño de los logos y de la img de la ubicacion. Se distribuye en contenido en seciones de izquierda, derecha y centro */
+
 footer {
     background-color: var(--violetagris);
 }
 
-footer img {
-    width: 2%;
+.ContenidoFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    color: var(--crema);
 }
 
-#footer-inicio {
-    text-align: left;
+.DerechosReservados {
+    display: flex;
+    align-items: flex-end;
+    grid-column: 1/2;
+    grid-row: 2/2;
+    font-size: 15px;
 }
 
-#redes-sociales {
-    text-align: center;
+.RedesSociales {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: center;
 }
 
-#footer-final {
-    text-align: right;
+.RedesSociales svg {
+    width: 100%;
+    height: 40%;
 }
 
-#footer-final img {
-    width: 20%;
+.DireccionHorario {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1/2/3/3;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+@media (min-width: 1024px) {
+    .Logo {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .Logo img {
+        width: 30%;
+        padding-right: 20px;
+    }
+
+    #carouselExampleAutoplaying{
+        width: 900px;
+        margin: auto;
+    }
+
+    .nuestras-instalaciones .carousel-inner img { 
+        width: 100%;
+        height: 50vh; 
+        object-fit: cover;
+    }
+
+    #carouselExampleCaptions {
+        width: 600px; /* Ajusta el ancho del carrusel */
+        margin: auto; /* Centra el carrusel */
+    }
+    
+    .carousel-inner img {
+        width: 100%;
+        height: 400px; /* Ajusta la altura de las imágenes */
+        object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+    }
+    
+
+    .DerechosReservados {
+        font-size: 100%;
+        justify-content: center;
+    }
+
+    .RedesSociales{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .RedesSociales svg{
+        width: 10%;
+    }
+
+    .DireccionHorario {
+        font-size: 120%;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+
+    .navbar-collapse {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        background-color: var(--crema);
+        z-index: 1;
+    }
+
 }
