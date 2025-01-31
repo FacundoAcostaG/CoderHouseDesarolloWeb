@@ -38,11 +38,6 @@ header {
     width: 100%;
 }
 
-nav ul li {
-    display: inline-block;
-    padding: 10px;
-}
-
 nav ul li a {
     text-decoration: none;
 }
@@ -111,6 +106,24 @@ nav ul li a {
     border-radius: 25px; /* Esquinas redondeadas (opcional) */
 }
 
+.accordion {
+    background: url(../img/adopcion/perro3.jpg) no-repeat center center/cover;
+}
+
+.accordion-button {
+    background-color: rgba(255, 255, 255, 0.6); 
+    border: none;
+    font-weight: bold;
+}
+
+.accordion-item {
+    background: none;
+}
+
+.accordion-body{
+    background-color: rgba(255, 255, 255, 0.8) ;
+}
+
 /* Comienzos de modificacion de estilos en el footer. Color de fondo, tamaño de los logos y de la img de la ubicacion. Se distribuye en contenido en seciones de izquierda, derecha y centro */
 
 footer {
@@ -155,14 +168,22 @@ footer {
 
 
 @media (min-width: 1024px) {
+   
+    nav ul li {
+        white-space: nowrap;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 120%;
+    }
+
     .Logo {
         display: flex;
         justify-content: flex-end;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .Logo img {
-        width: 30%;
+        width: 40%;
         padding-right: 20px;
     }
 
@@ -227,7 +248,7 @@ footer {
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 
     .navbar-collapse {
         display: block;
