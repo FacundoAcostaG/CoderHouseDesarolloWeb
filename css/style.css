@@ -124,9 +124,81 @@ nav ul li a {
     background-color: rgba(255, 255, 255, 0.8) ;
 }
 
+.MainContacto h3 {
+    padding: 10px;
+}
+
+.Form {
+    display: flex;
+    justify-content: center;
+}
+
+.Formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px;
+    border-radius: 50px;
+    width: 300px;
+    border: 2px solid var(--violetagris);
+}
+
+.BtnEnviar{
+    background-color: var(--rosarojo); /* Color verde atractivo */
+    color: white; /* Texto blanco para un buen contraste */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin bordes */
+    border-radius: 35px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de fuente adecuado */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin-bottom: 20px;
+}
+
+.SeccionForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.BtnEnviar:hover {
+    transform: translateY(-2px); /* Levanta el botón ligeramente */
+    background-color: #D96B6B;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+}
+
+label {
+    display: block; /* Hace que los labels ocupen toda la línea */
+    font-size: 22px;
+    font-weight: bold; /* Hace que los textos de los labels sean más visibles */
+    align-self: flex-start;
+}
+
+.SeccionForm input{
+    border: none;
+    border-bottom: 2px solid var(--rosarojo);
+    background: none;
+    outline: none;
+    width: 180px
+    
+}
+
+.SeccionForm textarea {
+    border: none;
+    border-bottom: 2px solid var(--rosarojo);
+    background: none;
+    outline: none;
+    width: 180px;
+}
 /* Comienzos de modificacion de estilos en el footer. Color de fondo, tamaño de los logos y de la img de la ubicacion. Se distribuye en contenido en seciones de izquierda, derecha y centro */
 
 footer {
+    margin-top: 30px;
     background-color: var(--violetagris);
 }
 
@@ -244,6 +316,19 @@ footer {
 
     .Servicios div span {
         font-size: 25px;
+    }
+    
+    .Formulario {
+        width: 350px;
+    }
+    
+    .SeccionForm input{
+        width: 240px
+        
+    }
+    
+    .SeccionForm textarea {
+        width: 240px;
     }
 
 }
