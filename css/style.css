@@ -78,7 +78,7 @@ nav ul li a {
 }
 
 .Servicios div.Reves img {
-    order:-1;
+    order: -1;
 }
 
 .Servicios div img {
@@ -96,14 +96,19 @@ nav ul li a {
 
 .carousel-inner img {
     width: 100%;
-    height: 400px; /* Ajusta la altura de las imágenes */
-    object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+    height: 400px;
+    /* Ajusta la altura de las imágenes */
+    object-fit: cover;
+    /* Asegura que las imágenes mantengan su proporción */
 }
 
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.3); /* Fondo negro semi-transparente */
-    padding: 5px; /* Agrega espacio interno para que el texto no esté pegado */
-    border-radius: 25px; /* Esquinas redondeadas (opcional) */
+    background: rgba(0, 0, 0, 0.3);
+    /* Fondo negro semi-transparente */
+    padding: 5px;
+    /* Agrega espacio interno para que el texto no esté pegado */
+    border-radius: 25px;
+    /* Esquinas redondeadas (opcional) */
 }
 
 .accordion {
@@ -111,7 +116,7 @@ nav ul li a {
 }
 
 .accordion-button {
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: rgba(255, 255, 255, 0.6);
     border: none;
     font-weight: bold;
 }
@@ -120,8 +125,8 @@ nav ul li a {
     background: none;
 }
 
-.accordion-body{
-    background-color: rgba(255, 255, 255, 0.8) ;
+.accordion-body {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .MainContacto h3 {
@@ -145,18 +150,25 @@ nav ul li a {
     border: 2px solid var(--violetagris);
 }
 
-.BtnEnviar{
-    background-color: var(--rosarojo); /* Color verde atractivo */
-    color: white; /* Texto blanco para un buen contraste */
-    padding: 10px 20px; /* Espaciado interno */
-    border: none; /* Sin bordes */
-    border-radius: 35px; /* Bordes redondeados */
-    font-size: 18px; /* Tamaño de fuente adecuado */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+.BtnEnviar {
+    background-color: var(--rosarojo);
+    /* Color verde atractivo */
+    color: white;
+    /* Texto blanco para un buen contraste */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border: none;
+    /* Sin bordes */
+    border-radius: 35px;
+    /* Bordes redondeados */
+    font-size: 18px;
+    /* Tamaño de fuente adecuado */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
     margin-bottom: 20px;
 }
 
-.SeccionForm{
+.SeccionForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,28 +176,32 @@ nav ul li a {
 }
 
 .BtnEnviar:hover {
-    transform: translateY(-2px); /* Levanta el botón ligeramente */
+    transform: translateY(-2px);
+    /* Levanta el botón ligeramente */
     background-color: #D96B6B;
 }
 
-input::placeholder, textarea::placeholder {
-    font-size: 14px; /* Ajusta el tamaño de la fuente */
+input::placeholder,
+textarea::placeholder {
+    font-size: 14px;
+    /* Ajusta el tamaño de la fuente */
 }
 
 label {
-    display: block; /* Hace que los labels ocupen toda la línea */
+    display: block;
+    /* Hace que los labels ocupen toda la línea */
     font-size: 22px;
-    font-weight: bold; /* Hace que los textos de los labels sean más visibles */
+    font-weight: bold;
+    /* Hace que los textos de los labels sean más visibles */
     align-self: flex-start;
 }
 
-.SeccionForm input{
+.SeccionForm input {
     border: none;
     border-bottom: 2px solid var(--rosarojo);
     background: none;
     outline: none;
     width: 180px
-    
 }
 
 .SeccionForm textarea {
@@ -195,6 +211,59 @@ label {
     outline: none;
     width: 180px;
 }
+
+/* ESTILOS WEB ADOPCION */
+.ContenidoAdopcion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.ContenidoAdopcion div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ContenidoAdopcion img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.FilaAdopcion div {
+    display: flex;
+    margin: 10px;
+    border: 1px solid var(--violetagris);
+    border-radius: 10px;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.FilaAdopcion a {
+    display: block;
+    background-color: var(--rosarojo);
+    color: white;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.FilaAdopcion a:hover {
+    transform: scale(1.02);
+    background-color: #D96B6B;
+}
+
+.FilaAdopcion h3 {
+    font-size: 15px;
+}
+
+
 /* Comienzos de modificacion de estilos en el footer. Color de fondo, tamaño de los logos y de la img de la ubicacion. Se distribuye en contenido en seciones de izquierda, derecha y centro */
 
 footer {
@@ -240,7 +309,7 @@ footer {
 
 
 @media (min-width: 1024px) {
-   
+
     nav ul li {
         white-space: nowrap;
         margin-left: 10px;
@@ -259,40 +328,44 @@ footer {
         padding-right: 20px;
     }
 
-    #carouselExampleAutoplaying{
+    #carouselExampleAutoplaying {
         width: 900px;
         margin: auto;
     }
 
-    .nuestras-instalaciones .carousel-inner img { 
+    .nuestras-instalaciones .carousel-inner img {
         width: 100%;
-        height: 50vh; 
+        height: 50vh;
         object-fit: cover;
     }
 
     #carouselExampleCaptions {
-        width: 600px; /* Ajusta el ancho del carrusel */
-        margin: auto; /* Centra el carrusel */
+        width: 600px;
+        /* Ajusta el ancho del carrusel */
+        margin: auto;
+        /* Centra el carrusel */
     }
-    
+
     .carousel-inner img {
         width: 100%;
-        height: 400px; /* Ajusta la altura de las imágenes */
-        object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+        height: 400px;
+        /* Ajusta la altura de las imágenes */
+        object-fit: cover;
+        /* Asegura que las imágenes mantengan su proporción */
     }
-    
+
 
     .DerechosReservados {
         font-size: 100%;
         justify-content: center;
     }
 
-    .RedesSociales{
+    .RedesSociales {
         align-items: center;
         justify-content: center;
     }
 
-    .RedesSociales svg{
+    .RedesSociales svg {
         width: 10%;
     }
 
@@ -304,7 +377,7 @@ footer {
         gap: 50px;
         margin: 40px;
     }
-    
+
     .Servicios div {
         gap: 20px;
         width: 70%;
@@ -317,20 +390,46 @@ footer {
     .Servicios div span {
         font-size: 25px;
     }
-    
+
     .Formulario {
         width: 350px;
     }
-    
-    .SeccionForm input{
+
+    .SeccionForm input {
         width: 240px
-        
     }
-    
+
     .SeccionForm textarea {
         width: 240px;
     }
 
+    /* ESTILOS WEB ADOPCION */
+    .ContenidoAdopcion {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .ContenidoAdopcion img {
+        height: 350px;
+    }
+
+    .FilaAdopcion {
+        display: flex;
+    }
+
+    .FilaAdopcion div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FilaAdopcion a {
+        width: 20%;
+    }
+
+    .FilaAdopcion.ProbandoEliminar {
+        display: none;
+    }
 }
 
 @media (max-width: 1023px) {
