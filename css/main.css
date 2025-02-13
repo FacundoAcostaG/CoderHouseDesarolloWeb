@@ -345,16 +345,16 @@ footer {
   main .FilaAdopcion a {
     font-size: 18px;
   }
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
   footer div .RedesSociales svg {
     width: 20%;
   }
   footer div div p {
     font-size: 22px;
+  }
+  .FooterCorto {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
@@ -460,7 +460,7 @@ footer {
   .FilaAdopcion.ProbandoEliminar {
     display: none;
   }
-  footer {
+  .FooterCorto {
     position: absolute;
     bottom: 0;
     width: 100%;
