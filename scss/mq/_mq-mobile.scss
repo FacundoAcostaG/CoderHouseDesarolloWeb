@@ -1,0 +1,192 @@
+.Logo {
+	img {
+		width: 100%;
+	}
+}
+nav {
+	ul {
+		li {
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+.navbar {
+	.nav-link {
+		&:hover {
+			color: $color-secundario;
+		}
+	}
+}
+main {
+	margin: 2px;
+}
+.index {
+	p {
+		strong {
+			display: block;
+			color: $color-secundario;
+		}
+	}
+	a {
+		color: $color-secundario;
+		display: block;
+		text-decoration: none;
+		padding-bottom: 15px;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+}
+.nuestras-instalaciones {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.carousel-inner {
+	img {
+		@include widthCover(100%, 400px);
+	}
+}
+.carousel-caption {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 5px;
+	border-radius: 25px;
+}
+.Servicios {
+	@include flex(column, center, center);
+	gap: 40px;
+	div {
+		@include flex(column, center, center);
+		img {
+			width: 100px;
+		}
+		span {
+			display: block;
+			align-items: center;
+			color: $color-secundario;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+}
+.accordion {
+	background: url(../img/adopcion/perro3.jpg) no-repeat center center/cover;
+}
+.accordion-button {
+	background-color:  rgba(255, 255, 255, 0.6);
+	border: none;
+	font-weight: bold;
+}
+.accordion-item {
+	background: none;
+}
+.accordion-body {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.MainContacto {
+	h3 {
+		padding: 10px;
+	}
+}
+.Form {
+	@include flex(row, center, center);
+}
+.Formulario {
+	@include flex(column, center, center);
+	gap: 10px;
+	padding-top: 20px;
+	border-radius: 50px;
+	width: 300px;
+	border: 2px solid $color-terciario;
+}
+.BtnEnviar {
+	@include btn(18px, 35px, 10px 20px);
+	margin-bottom: 20px;
+}
+.SeccionForm {
+	@include flex(column, center, center);
+	margin-bottom: 15px;
+	input {
+		@include formMobile();
+	}
+	textarea {
+		@include formMobile();
+	}
+}
+input {
+	&::placeholder {
+		font-size: 14px;
+	}
+}
+textarea {
+	&::placeholder {
+		font-size: 14px;
+	}
+}
+label {
+	display: block;
+	font-size: 22px;
+	font-weight: bold;
+	align-self: flex-start;
+}
+.ContenidoAdopcion {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	div {
+		@include flex(row, center, center);
+		flex-wrap: wrap;
+	}
+	img {
+		@include widthCover(100%, 300px);
+		border-radius: 10px;
+	}
+}
+.FilaAdopcion {
+	div {
+		@include flex(column, center, center);
+		margin: 10px;
+		border: 1px solid $color-terciario;
+		border-radius: 10px;
+		padding-bottom: 8px;
+		width: 100%;
+	}
+	a {
+		@include btn(12px,10px,2px 5px);
+		display: block;
+		text-decoration: none;
+	}
+	h3 {
+		font-size: 15px;
+	}
+}
+footer {
+	margin-top: 30px;
+	background-color: $color-terciario;
+}
+.ContenidoFooter {
+	@include grid(repeat(2, 1fr), auto);
+	color: $color-principal;
+}
+.DerechosReservados {
+	@include flex(column, center, center);
+	grid-column: 1/2;
+	grid-row: 2/2;
+	font-size: 15px;
+}
+.RedesSociales {
+	@include flex(row, center, center);
+	grid-column: 1/2;
+	grid-row: 1/2;
+	svg {
+		width: 100%;
+		height: 40%;
+	}
+}
+.DireccionHorario {
+	@include flex(column, center, center);
+	grid-area: 1/2/3/3;
+	padding: 10px;
+}

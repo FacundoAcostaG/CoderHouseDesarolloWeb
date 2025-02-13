@@ -1,0 +1,115 @@
+@media (min-width: 1024px) {
+	nav {
+		ul {
+			li {
+				white-space: nowrap;
+				margin-left: 10px;
+				margin-right: 10px;
+				font-size: 120%;
+			}
+		}
+	}
+	.Logo {
+		@include flex(row, center, flex-end);
+		img {
+			width: 40%;
+			padding-right: 20px;
+		}
+	}
+	#carouselExampleAutoplaying {
+		width: 900px;
+		margin: auto;
+	}
+	.nuestras-instalaciones {
+		.carousel-inner {
+			img {
+				@include widthCover(100%, 50vh);
+			}
+		}
+	}
+	#carouselExampleCaptions {
+		width: 600px;
+		margin: auto;
+	}
+	.carousel-inner {
+		img {
+			@include widthCover(100%, 400px);
+		}
+	}
+	.DerechosReservados {
+		font-size: 100%;
+		justify-content: center;
+	}
+	.RedesSociales {
+		align-items: center;
+		justify-content: center;
+		svg {
+			width: 10%;
+		}
+	}
+	.DireccionHorario {
+		font-size: 120%;
+	}
+	.Servicios {
+		gap: 50px;
+		margin: 40px;
+		div {
+			display: grid;
+			grid-template-columns: 1fr auto;
+			align-items: center;
+			justify-content: center;
+			gap: 25px;
+			width: 70%;
+			img {
+				width: 150px;
+			}
+			span {
+				font-size: 25px;
+			}
+		}
+		div.Reves {
+			grid-template-columns: auto 1fr;
+			img {
+				order: -1;
+			}
+		}
+	}
+	.Formulario {
+		width: 350px;
+	}
+	.SeccionForm {
+		input {
+			width: 240px;
+		}
+		textarea {
+			width: 240px;
+		}
+	}
+	.ContenidoAdopcion {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+		img {
+			height: 350px;
+		}
+	}
+	.FilaAdopcion {
+		display: flex;
+		div {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+		a {
+			width: 20%;
+		}
+	}
+	.FilaAdopcion.ProbandoEliminar {
+		display: none;
+	}
+
+	footer{
+		position: absolute;
+        bottom: 0;
+        width: 100%;
+	}
+}

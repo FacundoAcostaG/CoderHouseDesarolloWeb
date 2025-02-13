@@ -1,0 +1,16 @@
+/* ESTILOS GENERALES */
+
+body {
+	font-family: $font;
+	background-color: $color-principal;
+	text-align: center;
+}
+h1 {
+	font-size: 30px;
+	background-color: $color-secundario;
+	color: $color-principal;
+}
+
+header {
+	@include grid(repeat(2, 1fr), auto);
+}
