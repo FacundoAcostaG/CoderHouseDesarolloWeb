@@ -1,0 +1,481 @@
+/* RESET */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* mixin con parametros */
+/* ESTILOS GENERALES */
+body {
+  font-family: "Nunito", serif;
+  background-color: #fefaec;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  background-color: #F38181;
+  color: #fefaec;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.Logo img {
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  color: #F38181;
+}
+
+main {
+  margin: 2px;
+}
+
+.index p strong {
+  display: block;
+  color: #F38181;
+}
+.index a {
+  color: #F38181;
+  display: block;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+.index a:hover {
+  transform: scale(1.05);
+}
+
+.nuestras-instalaciones {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.Servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.Servicios div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Servicios div img {
+  width: 100px;
+}
+.Servicios div span {
+  display: block;
+  align-items: center;
+  color: #F38181;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.accordion {
+  background: url(../img/adopcion/perro3.jpg) no-repeat center center/cover;
+}
+
+.accordion-button {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-weight: bold;
+}
+
+.accordion-item {
+  background: none;
+}
+
+.accordion-body {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.MainContacto h3 {
+  padding: 10px;
+}
+
+.Form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
+  border-radius: 50px;
+  width: 300px;
+  border: 2px solid #625772;
+}
+
+.BtnEnviar {
+  font-size: 18px;
+  border-radius: 35px;
+  padding: 10px 20px;
+  background-color: #F38181;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 20px;
+}
+.BtnEnviar:hover {
+  transform: scale(1.02);
+  background-color: #D96B6B;
+}
+
+.SeccionForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.SeccionForm input {
+  border: none;
+  border-bottom: 2px solid #F38181;
+  background: none;
+  outline: none;
+  width: 180px;
+}
+.SeccionForm textarea {
+  border: none;
+  border-bottom: 2px solid #F38181;
+  background: none;
+  outline: none;
+  width: 180px;
+}
+
+input::placeholder {
+  font-size: 14px;
+}
+
+textarea::placeholder {
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.ContenidoAdopcion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+.ContenidoAdopcion div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ContenidoAdopcion img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.FilaAdopcion div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border: 1px solid #625772;
+  border-radius: 10px;
+  padding-bottom: 8px;
+  width: 100%;
+}
+.FilaAdopcion a {
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 2px 5px;
+  background-color: #F38181;
+  color: white;
+  cursor: pointer;
+  border: none;
+  display: block;
+  text-decoration: none;
+}
+.FilaAdopcion a:hover {
+  transform: scale(1.02);
+  background-color: #D96B6B;
+}
+.FilaAdopcion h3 {
+  font-size: 15px;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #625772;
+}
+
+.ContenidoFooter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  color: #fefaec;
+}
+
+.DerechosReservados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/2;
+  grid-row: 2/2;
+  font-size: 15px;
+}
+
+.RedesSociales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.RedesSociales svg {
+  width: 100%;
+  height: 40%;
+}
+
+.DireccionHorario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: 1/2/3/3;
+  padding: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  header .navbar {
+    font-size: 22px;
+  }
+  main h1 {
+    font-size: 40px;
+  }
+  main h2 {
+    font-size: 30px;
+  }
+  main div h5 {
+    font-size: 22px;
+  }
+  main p {
+    font-size: 22px;
+  }
+  main a {
+    font-size: 22px;
+  }
+  main .Servicios div p {
+    font-size: 22px;
+  }
+  main .Servicios div span {
+    font-size: 24px;
+  }
+  main .Servicios div img {
+    width: 20%;
+  }
+  main .accordion-header button {
+    font-size: 22px;
+  }
+  main .accordion-item {
+    font-size: 22px;
+  }
+  main .Formulario {
+    width: 340px;
+  }
+  main .SeccionForm input {
+    width: 230px;
+  }
+  main .SeccionForm input::placeholder {
+    font-size: 20px;
+  }
+  main .SeccionForm textarea {
+    width: 230px;
+  }
+  main .SeccionForm textarea::placeholder {
+    font-size: 20px;
+  }
+  main label {
+    font-size: 22px;
+  }
+  main .BtnEnviar {
+    font-size: 22px;
+  }
+  main .FilaAdopcion h3 {
+    font-size: 22px;
+  }
+  main .FilaAdopcion a {
+    font-size: 18px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  footer div .RedesSociales svg {
+    width: 20%;
+  }
+  footer div div p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul li {
+    white-space: nowrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 120%;
+  }
+  .Logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .Logo img {
+    width: 40%;
+    padding-right: 20px;
+  }
+  #carouselExampleAutoplaying {
+    width: 900px;
+    margin: auto;
+  }
+  .nuestras-instalaciones .carousel-inner img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  #carouselExampleCaptions {
+    width: 600px;
+    margin: auto;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .DerechosReservados {
+    font-size: 100%;
+    justify-content: center;
+  }
+  .RedesSociales {
+    align-items: center;
+    justify-content: center;
+  }
+  .RedesSociales svg {
+    width: 10%;
+  }
+  .DireccionHorario {
+    font-size: 120%;
+  }
+  .Servicios {
+    gap: 50px;
+    margin: 40px;
+  }
+  .Servicios div {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 70%;
+  }
+  .Servicios div img {
+    width: 150px;
+  }
+  .Servicios div span {
+    font-size: 25px;
+  }
+  .Servicios div.Reves {
+    grid-template-columns: auto 1fr;
+  }
+  .Servicios div.Reves img {
+    order: -1;
+  }
+  .Formulario {
+    width: 350px;
+  }
+  .SeccionForm input {
+    width: 240px;
+  }
+  .SeccionForm textarea {
+    width: 240px;
+  }
+  .ContenidoAdopcion {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .ContenidoAdopcion img {
+    height: 350px;
+  }
+  .FilaAdopcion {
+    display: flex;
+  }
+  .FilaAdopcion div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .FilaAdopcion a {
+    width: 20%;
+  }
+  .FilaAdopcion.ProbandoEliminar {
+    display: none;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
+  .navbar-collapse {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    background-color: #fefaec;
+    z-index: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

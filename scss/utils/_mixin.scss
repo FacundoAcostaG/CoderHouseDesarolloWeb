@@ -1,0 +1,43 @@
+/* mixin con parametros */
+
+@mixin grid($column, $row){
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+}
+
+@mixin btn($font-size, $border-radius ,$padding){
+    font-size: $font-size;
+    border-radius: $border-radius;
+    padding: $padding;
+    background-color: $color-secundario;
+    color: white;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        transform: scale(1.02);
+        background-color: #D96B6B;
+    }
+}
+
+@mixin formMobile(){
+    border: none;
+    border-bottom: 2px solid $color-secundario;
+    background: none;
+    outline: none;
+    width: 180px;
+}
+
+@mixin flex($flex-direcition, $align-items, $justify-content){
+    display: flex;
+    flex-direction: $flex-direcition;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin widthCover($width, $height){
+    width: $width;
+    height: $height;
+    object-fit: cover;
+} 

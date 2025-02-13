@@ -1,0 +1,116 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        .navbar {
+            font-size: 22px;
+        }
+    }
+
+    main {
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        div {
+            h5 {
+                font-size: 22px;
+            }
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        a {
+            font-size: 22px;
+        }
+
+        .Servicios {
+            div {
+                p {
+                    font-size: 22px;
+                }
+
+                span {
+                    font-size: 24px;
+                }
+
+                img {
+                    width: 20%;
+                }
+            }
+        }
+
+        .accordion-header {
+            button {
+                font-size: 22px;
+            }
+        }
+
+        .accordion-item {
+            font-size: 22px;
+        }
+
+        .Formulario {
+            width: 340px;
+        }
+
+        .SeccionForm {
+            input {
+                width: 230px;
+
+                &::placeholder {
+                    font-size: 20px;
+                }
+            }
+
+            textarea {
+                width: 230px;
+
+                &::placeholder {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        label {
+            font-size: 22px;
+        }
+
+        .BtnEnviar {
+            font-size: 22px;
+        }
+
+        .FilaAdopcion {
+            h3 {
+                font-size: 22px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        div {
+            .RedesSociales {
+                svg {
+                    width: 20%;
+                }
+            }
+
+            div {
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
