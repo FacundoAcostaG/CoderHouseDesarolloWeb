@@ -1,3 +1,5 @@
+/* MQ TABLET*/
+/* Se modifica tamano de fuente e imagenes en todas las secciones */
 @media (min-width: 768px) and (max-width: 1023px) {
     header {
         .navbar {
@@ -111,6 +113,7 @@
         }
     }
 
+/* Se agrega estilo para el footer del formulario para que siempre este al final a pesar de su contenido corto */
     .FooterCorto{
         position: absolute;
         bottom: 0;

@@ -1,4 +1,7 @@
+/* MQ DESKTOP */
 @media (min-width: 1024px) {
+
+	/* Se ajusta el nav */
 	nav {
 		ul {
 			li {
@@ -16,6 +19,8 @@
 			padding-right: 20px;
 		}
 	}
+
+	/* Se ajustan los carruseles y las imagenes (index) */
 	#carouselExampleAutoplaying {
 		width: 900px;
 		margin: auto;
@@ -36,6 +41,8 @@
 			@include widthCover(100%, 400px);
 		}
 	}
+
+	/* Se ajusta el contenido del footer */
 	.DerechosReservados {
 		font-size: 100%;
 		justify-content: center;
@@ -50,6 +57,8 @@
 	.DireccionHorario {
 		font-size: 120%;
 	}
+
+	/* Se ajusta la disposicion de elemenos en la seccion de sevicios */
 	.Servicios {
 		gap: 50px;
 		margin: 40px;
@@ -74,6 +83,8 @@
 			}
 		}
 	}
+
+	/* Se ajusta el tamano de los campos en el formulario */
 	.Formulario {
 		width: 350px;
 	}
@@ -85,6 +96,8 @@
 			width: 240px;
 		}
 	}
+
+	/* Se ajusta el contenido de adopcion, se cambia de 2 columnas a 3 */
 	.ContenidoAdopcion {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 20px;
@@ -107,6 +120,7 @@
 		display: none;
 	}
 
+	/* Se agrega estilo para el footer del formulario para que siempre este al final a pesar de su contenido corto */
     .FooterCorto{
         position: absolute;
         bottom: 0;
