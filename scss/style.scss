@@ -11,6 +11,7 @@
 
 @import "mq/mq-desktop";
 
+/* MQ para estilos del menu hamburguesa hasta que sea desktop */
 @media (max-width: 1023px) {
 	.navbar-collapse {
 		display: block;
