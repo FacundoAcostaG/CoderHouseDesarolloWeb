@@ -6,7 +6,12 @@
   box-sizing: border-box;
 }
 
-/* mixin con parametros */
+/* MIXIN */
+/* Mixin de grid, se pasa por parametro columnas y filas*/
+/* Mixin de lob botones, se pasa por parametro el tamano de la fuente, el borde y el padding */
+/* Mixin de estilos del formulario, no tiene parametros */
+/* Mixin de Flex */
+/* Mixin para imagenes con object-fit: cover, se pasa por parametro el ancho y el alto */
 /* ESTILOS GENERALES */
 body {
   font-family: "Nunito", serif;
@@ -26,6 +31,8 @@ header {
   grid-template-rows: auto;
 }
 
+/* MQ MOBILE (no se aplica la mq porque se diseno mobile first*/
+/* Estilos navbar */
 .Logo img {
   width: 100%;
 }
@@ -42,6 +49,7 @@ main {
   margin: 2px;
 }
 
+/* ESTILOS PARA EL INDEX */
 .index p strong {
   display: block;
   color: #F38181;
@@ -73,6 +81,7 @@ main {
   border-radius: 25px;
 }
 
+/* ESTILOS PARA LA SECCION DE SERVICIOS */
 .Servicios {
   display: flex;
   flex-direction: column;
@@ -98,6 +107,7 @@ main {
   text-align: center;
 }
 
+/* ESTILOS PARA LA SECCION DE FAQ */
 .accordion {
   background: url(../img/adopcion/perro3.jpg) no-repeat center center/cover;
 }
@@ -116,6 +126,7 @@ main {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+/* ESTILOS PARA LA SECCION DE FORMULARIO */
 .MainContacto h3 {
   padding: 10px;
 }
@@ -191,6 +202,7 @@ label {
   align-self: flex-start;
 }
 
+/* ESTILOS PARA LA SECCION DE ADOPCION */
 .ContenidoAdopcion {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -240,6 +252,7 @@ label {
   font-size: 15px;
 }
 
+/* ESTILOS PARA EL FOOTER */
 footer {
   margin-top: 30px;
   background-color: #625772;
@@ -269,10 +282,22 @@ footer {
   justify-content: center;
   grid-column: 1/2;
   grid-row: 1/2;
+  gap: 15px;
+  margin-top: 10px;
 }
-.RedesSociales svg {
+.RedesSociales a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: inherit;
+}
+.RedesSociales a svg {
   width: 100%;
-  height: 40%;
+  height: 80%;
+  transition: transform 0.3s ease-in-out;
+}
+.RedesSociales a:hover svg {
+  transform: scale(1.1);
 }
 
 .DireccionHorario {
@@ -284,6 +309,8 @@ footer {
   padding: 10px;
 }
 
+/* MQ TABLET*/
+/* Se modifica tamano de fuente e imagenes en todas las secciones */
 @media (min-width: 768px) and (max-width: 1023px) {
   header .navbar {
     font-size: 22px;
@@ -346,18 +373,21 @@ footer {
     font-size: 18px;
   }
   footer div .RedesSociales svg {
-    width: 20%;
+    width: 100%;
   }
   footer div div p {
     font-size: 22px;
   }
+  /* Se agrega estilo para el footer del formulario para que siempre este al final a pesar de su contenido corto */
   .FooterCorto {
     position: absolute;
     bottom: 0;
     width: 100%;
   }
 }
+/* MQ DESKTOP */
 @media (min-width: 1024px) {
+  /* Se ajusta el nav */
   nav ul li {
     white-space: nowrap;
     margin-left: 10px;
@@ -374,6 +404,7 @@ footer {
     width: 40%;
     padding-right: 20px;
   }
+  /* Se ajustan los carruseles y las imagenes (index) */
   #carouselExampleAutoplaying {
     width: 900px;
     margin: auto;
@@ -392,6 +423,7 @@ footer {
     height: 400px;
     object-fit: cover;
   }
+  /* Se ajusta el contenido del footer */
   .DerechosReservados {
     font-size: 100%;
     justify-content: center;
@@ -406,6 +438,7 @@ footer {
   .DireccionHorario {
     font-size: 120%;
   }
+  /* Se ajusta la disposicion de elemenos en la seccion de sevicios */
   .Servicios {
     gap: 50px;
     margin: 40px;
@@ -430,6 +463,7 @@ footer {
   .Servicios div.Reves img {
     order: -1;
   }
+  /* Se ajusta el tamano de los campos en el formulario */
   .Formulario {
     width: 350px;
   }
@@ -439,6 +473,7 @@ footer {
   .SeccionForm textarea {
     width: 240px;
   }
+  /* Se ajusta el contenido de adopcion, se cambia de 2 columnas a 3 */
   .ContenidoAdopcion {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -460,12 +495,14 @@ footer {
   .FilaAdopcion.ProbandoEliminar {
     display: none;
   }
+  /* Se agrega estilo para el footer del formulario para que siempre este al final a pesar de su contenido corto */
   .FooterCorto {
     position: absolute;
     bottom: 0;
     width: 100%;
   }
 }
+/* MQ para estilos del menu hamburguesa hasta que sea desktop */
 @media (max-width: 1023px) {
   .navbar-collapse {
     display: block;
